@@ -1,4 +1,4 @@
-import React, {FC} from 'react'
+import {FC} from 'react'
 import iconSun from "../assets/images/icon-sun.svg"
 
 

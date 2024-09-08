@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, KeyboardEvent, FC } from "react";
+import { useState, ChangeEvent, KeyboardEvent, FC } from "react";
 import "./ToDoInput.css";
 import iconcrossgray from "../assets/images/iconcrossgray.png";
 
@@ -46,7 +46,7 @@ const ToDoInput: FC<ITodoInput> = ({ theme }) => {
     console.log(index);
 
     setTasks((tasks) => {
-      return tasks.filter((task, taskIndex) => {
+      return tasks.filter((_task, taskIndex) => {
         return taskIndex != index;
       });
     });
