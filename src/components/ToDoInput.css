@@ -1,0 +1,149 @@
+main {
+  width: 500px;
+}
+
+.container {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* nav {
+    width: 465px;
+} */
+input {
+  /*width: 445px;*/
+  height: 60px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  padding: 0;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+
+#inputlight {
+  background-color: white;
+  color: black;
+}
+/*dark*/
+
+#inputdark {
+  background-color: hsl(244, 16%, 18%);
+  color: white;
+}
+
+/* ::placeholder {
+    padding-left: 20px;
+} */
+
+ul {
+  margin-top: 20px;
+  padding: 0;
+  cursor: pointer;
+  /* background-color: #CCC;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 5px; */
+}
+
+li {
+  background-color: hsl(244, 16%, 18%);
+  color: white;
+  border-bottom: 0.5px solid rgba(136, 126, 126, 0.507);
+  padding: 12px 10px 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* border-radius: 50px; */
+}
+
+#checkbox {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 0;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+li input[type="checkbox"] {
+  display: none; /* Hide the default checkbox */
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox .checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+li:hover .custom-checkbox .checkmark {
+  border-color: hsl(280, 87%, 65%);
+}
+.custom-checkbox input:checked + .checkmark {
+
+
+  border-color: hsl(220, 98%, 61%);
+  background: rgba(87, 221, 255, 1);
+  background: linear-gradient(
+    183deg,
+    rgba(87, 221, 255, 1) 0%,
+    rgba(192, 88, 243, 1) 100%
+  );
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: url("../assets/images/icon-check.svg");
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+.button-input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: hsl(244, 16%, 18%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0;
+}
+.icon-button {
+  background: none;
+  width: 30px;
+  color: #ccc;
+}
+
+li:hover button {
+  opacity: 1;
+}
